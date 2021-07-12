@@ -1,82 +1,116 @@
 <!DOCTYPE html>
 <html>
-<title>Third Page</title>
+    <title> website of mobiles </title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 13px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #1f22d4;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgba(14, 28, 160, 0.733);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 100px) {
+  .sidebar a {
+    margin-left: 170px;
+    text-align: center;
+    float: none;
+  }
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(111, 141, 240);
+  color: white;
+}
+</style>
+</head>
 <body>
-    <header>
+    <header style="background-color:rgb(7, 46, 138); text-align: center;color: rgb(255, 255, 255); padding-right: 0;">
         <article>
-                <a href="https://www.google.com" target="Home">HOME</a>
-                <a href="https://www.google.com" target="laybrary">LAYBRARY</a>
-                <a href="https://www.google.com" target="BOOKS">BOOKS</a>
-                <a href="https://www.youtube.com" target="music">MUSIC</a>
-                <a href="https://www.google.com" target="For You">FOR YOU</a>
+                <a href="https://www.google.com" target="Home">HOME</a> &ensp;
+                <a href="https://www.google.com" target="laybrary">LAYBRARY</a> &ensp;
+                <a href="https://www.google.com" target="BOOKS">BOOKS</a> &ensp;
+                <a href="https://www.youtube.com" target="music">MUSIC</a> &ensp;
+                <a href="https://www.google.com" target="For You">FOR YOU</a> 
         </article>
         </header>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Service</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Log In</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </nav>
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a href="#" class="w3-bar-item w3-button">Home </a>
-  <a href="#" class="w3-bar-item w3-button">About </a>
-  <a href="#" class="w3-bar-item w3-button">Service </a>
-  <a href="#" class="w3-bar-item w3-button">Log In </a>
-  <a href="#" class="w3-bar-item w3-button">Contact </a>
+<div class="sidebar">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
 </div>
-<div class="w3-container">
-</div>
-<script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-<section>
-    <article>
-        <h2>About Iphone</h2>
-        <p>The iPhone is a line of smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by former Apple CEO Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold</p>
-      </article>
-      <hr>
-      <article>
-        <h2>About Laptop </h2>
-        <p>A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard. These typically have a "clamshell" form factor, typically having the screen mounted on the inside of the upper lid and the keyboard on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a "laptop mode." Laptops are folded shut for transportation, and thus are suitable for mobile use.</p>
-      </article>
-      <hr>
-      <article>
-        <h2>About Computer Network</h2>
-        <p>A computer network is a group of computers that use a set of common communication protocols over digital interconnections for the purpose of sharing resources located on or provided by the network nodes. The interconnections between nodes are formed from a broad spectrum of telecommunication network technologies, based on physically wired, optical, and wireless radio-frequency methods that may be arranged in a variety of network</p>
-      </article>
-</section>
-<hr>
+<section style="text-align: center;">
+    <h1 style="text-align: center;color: rgb(10, 29, 116);"> website of mobiles </h1>
+    <hr>
+      <article style=" margin-left: 180px;">
+          <h2>About Iphone</h2>
+          <p>The iPhone is a line of smartphones designed and marketed by Apple Inc. that use Apple's iOS mobile operating system. The first-generation iPhone was announced by former Apple CEO Steve Jobs on January 9, 2007. Since then Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold</p>
+        </article>
+        <hr>
+        <article style=" margin-left: 180px;">
+          <h2>About Laptop </h2>
+          <p>A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard. These typically have a "clamshell" form factor, typically having the screen mounted on the inside of the upper lid and the keyboard on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a "laptop mode." Laptops are folded shut for transportation, and thus are suitable for mobile use.</p>
+        </article>
+        <hr>
+        <article style=" margin-left: 180px;">
+          <h2>About Computer Network</h2>
+          <p>A computer network is a group of computers that use a set of common communication protocols over digital interconnections for the purpose of sharing resources located on or provided by the network nodes. The interconnections between nodes are formed from a broad spectrum of telecommunication network technologies, based on physically wired, optical, and wireless radio-frequency methods that may be arranged in a variety of network</p>
+        </article>
+  </section>
+  <hr>
 <footer>
-    Copyright 2021&copy;
+    Copyright 2021 &copy;
 </footer>
-</body>
-</html> 
+  </body>
+  </html>
