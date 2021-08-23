@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <title>Task-8</title>
+<body>
+
+<form action="a.html" method="POST">
+  <div class="input">
+  <label>Username:</label><br>
+  <input type="text" id="Username" readonly value="Sahar" name="Username">
+</div>
+  <hr>
+  <div class="input">
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" required placeholder="password" name="password">
+</div>
+  <hr>
+  <div class="input">
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="5" size="5"><br><br>
+</div>
+<hr>
+<div class="input">
+   <label for="Email">Email:</label><br>
+  <input type="email" id="Email" required placeholder="sa@gmail.com" name="email">
+</div>
+<hr>
+<hr>
+<div class="input">
+<input type="hidden" id="custId" name="custId" value="3487">
+</div>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label><br><br>
+<hr>
+  <input type="radio" id="linux" name="fav_language" value="Linux">
+  <label for="linux">Linux</label><br>
+  <input type="radio" id="Windows" name="fav_language" value="Windows">
+  <label for="Windows">Windows</label><br><br>
+<!--<input type="radio"> defines a radio button.
+Radio buttons let a user select ONLY ONE of a limited number of choices-->
+
+<!--<input type="checkbox"> defines a checkbox.
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.-->
+
+  <input type="submit" value="send">
+</form> 
+</body>
+</html>
